@@ -1,9 +1,27 @@
-from Lab1 import download_MNIST, read_mnist, urlMNIST, filesName
+from DataLoader import load_dataset
+from Model import MnistModel, train
+from Metric import validate
 
-# download_MNIST(urlMNIST)
-train_images, train_labels = read_mnist(filesName[0], filesName[1])
-test_images, test_labels = read_mnist(filesName[2], filesName[3])
+def main():
+    # Load dataset
+    train_loader, test_loader = load_dataset()
 
-print(train_images.shape)
-print(train_labels.shape)
+    # Create model
+    network = MnistModel()
+
+    # Train model
+    # optimizer usse adam
+    # criterion use cross entropy loss
+    # num_epochs use 10
+    optimizer = torch.optim.Adam(network.parameters(), lr=0.001)
+    criterion = torch.nn.CrossEntropyLoss()
+    n_epochs = 10
+    train(network, train_loader)
+
+    # Validate model
+    accuracy = validate(network, test_loader)
+    print('Accuracy: ', accuracy)
+
+if __name__ == '__main__':
+    main()
 
