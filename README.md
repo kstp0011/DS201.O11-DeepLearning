@@ -27,7 +27,7 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 * **pip install torch**
 * **pip install torchvision**
 
-Sau khi cài đặt các thư viện, bạn có thể chạy các bài thực hành bằng cách chạy các tệp .py trong các thư mục tương ứng.
+Sau khi cài đặt các thư viện, bạn có thể chạy các bài thực hành bằng cách chạy các tệp main.py trong các thư mục Lab tương ứng.
 
 ## Liên hệ
 
