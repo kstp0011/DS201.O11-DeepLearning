@@ -1,9 +1,9 @@
 import torch.nn as nn
 import torch.optim as optim
 
-class MLP(nn.Module):
+class MLP_B1(nn.Module):
     def __init__(self):
-        super(MLP, self).__init__()
+        super(MLP_B1, self).__init__()
         self.fc1 = nn.Linear(28 * 28, 10)
         self.softmax = nn.Softmax()
 
@@ -14,6 +14,6 @@ class MLP(nn.Module):
         return x
 
 def Mnist_Model_B1(lr=0.01):
-    model = MLP()
+    model = MLP_B1()
     optimizer = optim.SGD(model.parameters(), lr=lr)
     return model, optimizer
