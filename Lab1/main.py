@@ -4,7 +4,7 @@ from Metric import evaluate, print_evaluation_each_class, evaluate_all_class
 
 def main():
     # Load dataset
-    dataset= download_mnist()
+    dataset = download_mnist()
     train_loader, test_loader = load_dataset(dataset)
 
     # Plot examples
