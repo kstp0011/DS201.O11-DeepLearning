@@ -1,1 +1,1 @@
-from .Metric import evaluate, print_evaluation_each_class, evaluate_all_class
+from .Metric import test, classification_report, print_evaluation_each_class
