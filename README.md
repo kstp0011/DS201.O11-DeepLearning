@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.O11 tại trường Đại học Công nghệ Thông tin (UIT).
+Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.O11 tại trường Đại học Công nghệ Thông tin (UIT) kì I năm học 2023-2024.
 
 ## Thông tin
 
