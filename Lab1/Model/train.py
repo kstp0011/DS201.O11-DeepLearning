@@ -1,14 +1,13 @@
-from torch.nn import CrossEntropyLoss
-import torch
+import torch.nn as nn
 
-def train(self, dataloader, optimizer=None, criterion=CrossEntropyLoss(), num_epochs=10):
-    if optimizer is None:
-        optimizer = torch.optim.Adam(self.parameters(), lr=0.001)
-    for epoch in range(num_epochs):
-        self.train()
-        for images, labels in dataloader:
+def train(model, train_loader, optimizer, epochs=10):
+    for epoch in range(epochs):
+        for i, (images, labels) in enumerate(train_loader):
+            outputs = model(images)
+            loss = nn.functional.cross_entropy(outputs, labels)
             optimizer.zero_grad()
-            output = self(images)
-            loss = criterion(output, labels)
             loss.backward()
             optimizer.step()
+
+        if (i + 1) % 100 == 0:
+            print("Epoch: {} Loss: {:.4f}".format(epoch + 1, loss.item()))

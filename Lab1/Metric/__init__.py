@@ -1,1 +1,1 @@
-from .Metric import validate
+from .Metric import evaluate, print_evaluation_each_class, evaluate_all_class
