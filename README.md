@@ -7,8 +7,10 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 ## Thông tin
 
 * **Tên môn học:** Deep Learning
-* **Giảng viên:** Nguyễn Hiếu Nghĩa
-* **Email giảng viên:** 19520178@ms.uit.edu.vn
+* **Giảng viên lý thuyết:** Đỗ Trọng Hợp
+* **Giảng viên thực hành:** Nguyễn Hiếu Nghĩa
+
+
 * **Nhóm thực hiện:**
     * Phạm Huỳnh Thiên Phú - 21521278@gm.uit.edu.vn
     * Ngô Gia Lâm - 21521054@gm.uit.edu.vn
@@ -22,8 +24,8 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 
 Để chạy các bài thực hành, bạn cần cài đặt các thư viện sau:
 
-* **Python 3.8.5**
-* **Pytorch 1.7.1**
+* **pip install torch**
+* **pip install torchvision**
 
 Sau khi cài đặt các thư viện, bạn có thể chạy các bài thực hành bằng cách chạy các tệp .py trong các thư mục tương ứng.
 
