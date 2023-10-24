@@ -18,6 +18,7 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 ## Bài thực hành
 
 * **Lab1: Xây dựng mạng Neural đơn giản**
+* **Lab2: Tối ưu mô hình mạng Neural**
 * **Các bài lab khác sẽ được cập nhật sau**
 
 ## Hướng dẫn sử dụng
@@ -27,7 +28,7 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 * **pip install torch**
 * **pip install torchvision**
 
-Sau khi cài đặt các thư viện, bạn có thể chạy các bài thực hành bằng cách chạy các tệp main.py trong các thư mục Lab tương ứng.
+Sau khi cài đặt các thư viện, bạn có thể chạy các bài thực hành bằng cách chạy các tệp main trong các thư mục Lab tương ứng.
 
 ## Liên hệ
 
