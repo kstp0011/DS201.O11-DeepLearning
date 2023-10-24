@@ -1,6 +1,7 @@
 from Config import train_image_path, train_label_path, test_image_path, test_label_path, train_batch, test_batch, n_epochs, learning_rate, momentum
 from DataLoader import load_data
-from Model import MLP, train, test
+from Model import MLP
+from Task_utils import train, test
 from Metric import classification_Report
 import torch
 
@@ -14,7 +15,7 @@ def main():
     model = MLP()
 
     # Define optimizer
-    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum)
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
     # Define loss function
     criterion = torch.nn.CrossEntropyLoss()

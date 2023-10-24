@@ -1,8 +1,6 @@
 import torch
 from torch import nn
 import torch.optim as optim
-from .train import train
-from .test import test
 
 class MLP(nn.Module):
   def __init__(self:object) -> None:
