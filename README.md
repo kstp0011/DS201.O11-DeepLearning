@@ -19,6 +19,7 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 
 * **Lab1: Xây dựng mạng Neural đơn giản**
 * **Lab2: Tối ưu mô hình mạng Neural**
+* **Lab3: Mạng Neural tích chập**
 * **Các bài lab khác sẽ được cập nhật sau**
 
 ## Hướng dẫn sử dụng
