@@ -1,5 +1,5 @@
 import torch
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, DataLoader
 import os
 import struct
 import numpy as np
@@ -24,3 +24,14 @@ class MNISTDataset(Dataset):
 
     def __getitem__(self, idx):
         return self.data[idx], self.labels[idx]
+
+def create_dataloader(data_path, labels_path, train_batch_size, test_batch_size):
+    train_dataset = MNISTDataset(data_path, labels_path)
+    test_dataset = MNISTDataset(data_path, labels_path)
+
+    train_loader = DataLoader(
+        train_dataset, batch_size=train_batch_size, shuffle=True)
+    test_loader = DataLoader(
+        test_dataset, batch_size=test_batch_size, shuffle=False)
+
+    return train_loader, test_loader
