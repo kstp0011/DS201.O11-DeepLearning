@@ -25,13 +25,14 @@ class MNISTDataset(Dataset):
     def __getitem__(self, idx):
         return self.data[idx], self.labels[idx]
 
-def create_dataloader(data_path, labels_path, train_batch_size, test_batch_size):
-    train_dataset = MNISTDataset(data_path, labels_path)
-    test_dataset = MNISTDataset(data_path, labels_path)
+
+def create_dataloader(args):
+    train_dataset = MNISTDataset(args["train_images_path"], args["train_labels_path"])
+    test_dataset = MNISTDataset(args["test_images_path"], args["test_labels_path"])
 
     train_loader = DataLoader(
-        train_dataset, batch_size=train_batch_size, shuffle=True)
+        train_dataset, batch_size=args["batch_size"], shuffle=True)
     test_loader = DataLoader(
-        test_dataset, batch_size=test_batch_size, shuffle=False)
+        test_dataset, batch_size=args["batch_size"], shuffle=False)
 
     return train_loader, test_loader
