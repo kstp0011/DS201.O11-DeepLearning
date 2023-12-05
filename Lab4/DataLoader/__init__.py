@@ -1,1 +1,2 @@
 from .Chest_Xray import Chest_Xray_dataloaders, Chest_Xray_dataset_sizes, Chest_Xray_class_names
+from .Jewellery import Jew_class_names, Jew_dataloaders, Jew_dataset_sizes
