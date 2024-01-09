@@ -21,7 +21,7 @@ Repo này chứa các bài thực hành về Deep Learning cho môn học DS201.
 -   **Lab3: Mạng Neural tích chập**
 -   **Lab4: Ứng dụng mạng Neural tích chập**
 -   **Lab5: Mạng Neural hồi quy**
--   **Các bài lab khác sẽ được cập nhật sau**
+-   **Lab6: XÂY DỰNG ỨNG DỤNG SỬ DỤNG DEEP LEARNING**
 
 ## Hướng dẫn sử dụng
 
